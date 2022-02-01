@@ -1,10 +1,11 @@
 # Chat online bot
 
 
-.env
+create files .env
+
 
 ```
-BOT_TOKEN =
+API_KEY = bot token
 ```
 # WARNING
 
