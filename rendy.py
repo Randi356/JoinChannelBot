@@ -3,7 +3,7 @@ import telebot
 
 # my telegram org by rendy 
 API_KEY = os.getenv('API_KEY')
-bot = telebot.Telebot(API_KEY)
+bot = telebot.TeleBot(API_KEY)
 
 # chatbot commad by rendy
 bot.message_handler(commad=['gay'])
