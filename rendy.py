@@ -6,7 +6,7 @@ API_KEY = os.getenv('API_KEY')
 bot = telebot.TeleBot(API_KEY)
 
 # chatbot commad by rendy
-bot.message_handler(commad=['gay'])
+bot.message_handler(commads=['gay'])
 def gay(message):
   bot.reply_to(message, "hallo gay")
   
