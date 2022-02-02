@@ -5,7 +5,9 @@ create files .env
 
 
 ```
-API_KEY = bot token
+BOT_TOKEN = bot token
+API_ID = my telegram org
+API_HASH = my telegram org
 ```
 # WARNING
 
