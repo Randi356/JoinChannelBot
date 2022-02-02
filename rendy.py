@@ -18,8 +18,8 @@ async def text(bot, update):
     reply_markup = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton(text="join channel", url="https://t.me/RendyProjects")],
-            [InlineKeyboardButton(text="Join Support", url="https://t.me/HomeSupport")
-        ],
+            [InlineKeyboardButton(text="Join Support", url="https://t.me/HomeSupport")]
+        ]
     )
     
     await update.reply_text(
