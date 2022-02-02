@@ -8,6 +8,7 @@ bot = Client(
   bot_token = os.enverion.get("BOT_TOKEN"),
   api_id = int(os.enverion.get("API_ID")),
   api_hash = os.enverion.get("API_HASH),
+)                             
                              
 @Bot.on_message(filters, private & private.all)
 async def text(bot, update):
