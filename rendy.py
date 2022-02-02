@@ -1,23 +1,8 @@
 # made by rendy
 
-import os, logging, asyncio
+import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
-from telethon import TelegramClient, events
-
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(name)s - [%(levelname)s] - %(message)s'
-)
-LOGGER = logging.getLogger(__name__)
-
-
-api_id = int(os.environ.get("APP_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("TOKEN")
-client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
-
-
 
 Bot = Client(
     "Join-Channel-Bot",
@@ -27,7 +12,7 @@ Bot = Client(
 )
 
 
-@client.on(events.NewMessage(pattern="^/test ?(.*)")) 
+@Bot.on(events.NewMessage(pattern="^/test ?(.*)")) 
 async def test(event):
    await event.reply("hello gay")
 
