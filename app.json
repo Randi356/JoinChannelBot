@@ -1,0 +1,45 @@
+{
+  
+  "name": "join-Channel-Bot",
+  "description": "Test filter bot",
+  "Logo": "https://telegra.ph/file/f49d6269fef9efb6cd4cb.jpg",
+  "keywords": [
+      "channel",
+      "groups",
+      "joinchannel",
+   ],
+   "website": "https://t.me/CuteInspire",
+   "repository": "https://github.com/Randi356/JoinChannelBot",
+   "success_url": "https://t.me/HomeSupport",
+   "env": {
+       "API_ID": {
+          "description": "Your api my.telegram.org",
+          "required": true
+          "value": "",
+       },
+       "API_HASH": {
+          "description": "Your api my.telegram.org",
+          "required": true
+          "value": "",
+       },
+       "BOT_TOKEN": {
+          "description": "Your botfather api token", 
+          "required": true
+          "value": "",
+       }
+       
+     },
+     "addons": [],
+     "buildpacks": [
+         {
+            "url": "heroku/python" 
+         } 
+     ],
+     "formation": {
+         "worker": {
+             "quantity": 1,
+             "size": "free"
+         }
+     } 
+} 
+         
