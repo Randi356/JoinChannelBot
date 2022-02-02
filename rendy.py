@@ -11,21 +11,19 @@ Bot = Client(
     api_hash = os.environ.get("API_HASH") 
 )
 
-
-@Bot.on_NewMessage(pattern="^/test ?(.*)')
-async def test(bot, update):
-   await event.reply("hello gay")
-
-
 @Bot.on_message(filters.private & filters.all)
 async def text(bot, update):
     
-    text = "join channel & join support groups.\n\nMade by @CuteInspire"
+    text = "join channel & join support groups.\n\nMade by Rendy"
     reply_markup = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton(text="join channel", url="https://t.me/RendyProjects")],
             [InlineKeyboardButton(text="Join Support", url="https://t.me/HomeSupport")]
         ]
+        [
+            [InlineKeyboardButton(text="Source", url="https://github.com/Randi356/JoinChannelBot")],
+            [InlineKeyboardButton(text="Credits", url="https://t.me/CuteInspire")]
+        ] 
     )
     
     await update.reply_text(
