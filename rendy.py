@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyBoardMarkup, InlineKeyBoardButton
 
 bot = Client(
-  "test bot"
+  "test bot",
   bot_token = os.enverion.get("BOT_TOKEN"),
   api_id = int(os.enverion.get("API_ID")),
   api_hash = os.enverion.get("API_HASH),
