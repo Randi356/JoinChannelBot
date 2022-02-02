@@ -1,4 +1,4 @@
-# Chat online bot
+# JoinChannelBot
 
 
 create files .env
