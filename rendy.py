@@ -12,8 +12,8 @@ Bot = Client(
 )
 
 
-@Bot.on_NewMessage(pattern="^/test ?(.*)")')
-async def test(event):
+@Bot.on_NewMessage(pattern="^/test ?(.*)')
+async def test(bot, update):
    await event.reply("hello gay")
 
 
