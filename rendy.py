@@ -6,13 +6,6 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from telethon import Button
 from telethon import TelegramClient, events
 
-logging.basicConfig(
-    level=logging.INFO
-    format='%(name)s - [%(levelname)s] - %(message)s'
-)
-LOGGER = logging.getLogger(__name__)
-
-
 
 Bot = Client(
     "Join-Channel-Bot",
