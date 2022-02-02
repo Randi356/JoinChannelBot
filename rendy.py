@@ -16,11 +16,11 @@ Bot = Client(
 @Bot.on_message(filters.private & filters.all)
 async def text(bot, update):
     
-    text = "join channel & join groups.\n\nMade by @CuteInspire"
+    text = "join channel & join support groups.\n\nMade by @CuteInspire"
     reply_markup = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton(text="join channel", url="https://t.me/RendyProjects")],
-            [InlineKeyboardButton(text="Search in another chat", url="https://t.me/HomeSupport")]
+            [InlineKeyboardButton(text="Join Support", url="https://t.me/HomeSupport")]
         ]
     )
     
