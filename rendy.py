@@ -3,6 +3,15 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from telethon import Button
+from telethon import TelegramClient, events
+
+logging.basicConfig(
+    level=logging.INFO
+    format='%(name)s - [%(levelname)s] - %(message)s'
+)
+LOGGER = logging.getLogger(__name__)
+
 
 
 Bot = Client(
@@ -11,6 +20,11 @@ Bot = Client(
     api_id = int(os.environ.get("API_ID")),
     api_hash = os.environ.get("API_HASH")
 )
+
+
+@client.on(events.NewMessage(pattern="^/test ?(.*)")) 
+async def test(event):
+   await event.reply("hello gay")
 
 
 @Bot.on_message(filters.private & filters.all)
