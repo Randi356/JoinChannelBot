@@ -1,7 +1,7 @@
 # made by rendy
 import os
 from pyrogram import Client, filters
-from pyrogram InlineKeyBoardMarkup, InlineKeyBoardButton
+from pyrogram.types import InlineKeyBoardMarkup, InlineKeyBoardButton
 
 bot = Client(
   "test bot"
